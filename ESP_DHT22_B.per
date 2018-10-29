@@ -1,0 +1,173 @@
+[Version]
+Product,2
+File,16
+{
+"Config" : {
+  "NetImportFormat" : "Protel"
+},
+"Board" : {
+  "Width" : 18,
+  "Height" : 16,
+  "Pattern" : "Strip"
+},
+"CelledOutlines" : [
+  { "Name" : "package name for PCB layout", "Locked" : false,
+    "Rows" : [
+    ["Body","Free","Body"],
+    ["Body","Body","Body"]
+    ]
+  },
+  { "Name" : "This part has no 'Package' attribute", "Locked" : false,
+    "Rows" : [
+    ["Body","Free","Body"],
+    ["Body","Body","Body"]
+    ]
+  },
+  { "Name" : "", "Locked" : false,
+    "Rows" : [
+    ["Body","Free","Body"],
+    ["Body","Body","Body"]
+    ]
+  },
+  { "Name" : "WEMOS_D1_MINI", "Locked" : false,
+    "Rows" : [
+    ["Body","Body","Body","Body","Body","Body","Body","Body","Body","Body"],
+    ["Body","Body","Body","Body","Body","Body","Body","Body","Body","Body"],
+    ["Body","Body","Body","Body","Body","Body","Body","Body","Body","Body"],
+    [{"Pin" : "1"},"Body","Body","Body","Body","Body","Body","Body","Body",{"Pin" : "16"}],
+    [{"Pin" : "2"},"Body","Body","Body","Body","Body","Body","Body","Body",{"Pin" : "15"}],
+    [{"Pin" : "3"},"Body","Body","Body","Body","Body","Body","Body","Body",{"Pin" : "14"}],
+    [{"Pin" : "4"},"Body","Body","Body","Body","Body","Body","Body","Body",{"Pin" : "13"}],
+    [{"Pin" : "5"},"Body","Body","Body","Body","Body","Body","Body","Body",{"Pin" : "12"}],
+    [{"Pin" : "6"},"Body","Body","Body","Body","Body","Body","Body","Body",{"Pin" : "11"}],
+    [{"Pin" : "7"},"Body","Body","Body","Body","Body","Body","Body","Body",{"Pin" : "10"}],
+    [{"Pin" : "8"},"Body","Body","Body","Body","Body","Body","Body","Body",{"Pin" : "9"}],
+    ["Body","Body","Body","Body","Body","Body","Body","Body","Body","Body"],
+    ["Body","Body","Body","Body","Body","Body","Body","Body","Body","Body"],
+    ["Body","Body","Body","Body","Body","Body","Body","Body","Body","Body"]
+    ]
+  },
+  { "Name" : "T092", "Locked" : false,
+    "Rows" : [
+    ["Body","Free","Body"],
+    ["Body","Body","Body"]
+    ]
+  },
+  { "Name" : "SIP2", "Locked" : false,
+    "Rows" : [
+    [{"Pin" : "1"}],
+    [{"Pin" : "2"}]
+    ]
+  },
+  { "Name" : "SIP4", "Locked" : false,
+    "Rows" : [
+    [{"Pin" : "1"}],
+    [{"Pin" : "2"}],
+    [{"Pin" : "3"}],
+    [{"Pin" : "4"}]
+    ]
+  }
+],
+"LeadedOutlines" : [
+],
+"RadialOutlines" : [
+],
+"CustomOutlines" : [
+  { "Name" : "TO92", "Locked" : false,
+    "Pins" : [
+    { "Name" : "1", "X5" : 2, "Y5" : 12 },
+    { "Name" : "2", "X5" : 7, "Y5" : 7 },
+    { "Name" : "3", "X5" : 2, "Y5" : 2 }
+    ],
+    "Lines" : [
+    { "X5" : 0, "Y5" : 0, "DX5" : 5, "DY5" : 0},
+    { "X5" : 9, "Y5" : 4, "DX5" : 0, "DY5" : 6},
+    { "X5" : 5, "Y5" : 14, "DX5" : -5, "DY5" : 0},
+    { "X5" : 0, "Y5" : 14, "DX5" : 0, "DY5" : -14},
+    { "X5" : 5, "Y5" : 0, "DX5" : 4, "DY5" : 4},
+    { "X5" : 5, "Y5" : 14, "DX5" : 4, "DY5" : -4}
+    ]
+  }
+],
+"SmdOutlines" : [
+],
+"Components" : [
+  { "Designator" : "U1", "Value" : "Wemos D1 mini", "Outline" : "WEMOS_D1_MINI",
+  "X1000" : 1000, "Y1000" : 0, "EndDeltaX" : 0, "EndDeltaY" : 1,
+  "Text" : { "X" : 0, "Y" : 0, "Angle" : 0, "Visible" : true },
+  "Group" : 0
+  },
+  { "Designator" : "U2", "Value" : "DHT22", "Outline" : "SIP4",
+  "X1000" : 16000, "Y1000" : 10000, "EndDeltaX" : 0, "EndDeltaY" : 1,
+  "Text" : { "X" : 0, "Y" : 0, "Angle" : 0, "Visible" : true },
+  "Group" : 0
+  },
+  { "Designator" : "B1", "Value" : "BATTERY_2", "Outline" : "SIP2",
+  "X1000" : 0, "Y1000" : 14000, "EndDeltaX" : 0, "EndDeltaY" : -1,
+  "Text" : { "X" : 0, "Y" : 2, "Angle" : 0, "Visible" : true },
+  "Group" : 0
+  },
+  { "Designator" : "FET?", "Value" : "N_MOSFET_ENH", "Outline" : "TO92",
+  "X1000" : 8000, "Y1000" : 11000, "EndDeltaX" : 0, "EndDeltaY" : 1,
+  "Text" : { "X" : -2, "Y" : 1, "Angle" : 0, "Visible" : false },
+  "Group" : 0
+  }
+],
+"Links" : [
+  { "X" : 9, "Y" : 8, "EndDeltaX" : 0, "EndDeltaY" : 2, "Group" : 0 },
+  { "X" : 2, "Y" : 3, "EndDeltaX" : 0, "EndDeltaY" : 11, "Group" : 0 },
+  { "X" : 3, "Y" : 4, "EndDeltaX" : 0, "EndDeltaY" : 9, "Group" : 0 },
+  { "X" : 7, "Y" : 4, "EndDeltaX" : 0, "EndDeltaY" : 8, "Group" : 0 }
+],
+"Breaks" : [
+  { "X" : 5, "Y" : 10, "Shift" : "none", "Group" : 0 },
+  { "X" : 5, "Y" : 9, "Shift" : "none", "Group" : 0 },
+  { "X" : 5, "Y" : 5, "Shift" : "none", "Group" : 0 },
+  { "X" : 5, "Y" : 4, "Shift" : "none", "Group" : 0 },
+  { "X" : 5, "Y" : 3, "Shift" : "none", "Group" : 0 },
+  { "X" : 5, "Y" : 8, "Shift" : "none", "Group" : 0 },
+  { "X" : 5, "Y" : 7, "Shift" : "none", "Group" : 0 },
+  { "X" : 5, "Y" : 6, "Shift" : "none", "Group" : 0 },
+  { "X" : 14, "Y" : 10, "Shift" : "none", "Group" : 0 },
+  { "X" : 14, "Y" : 11, "Shift" : "none", "Group" : 0 },
+  { "X" : 14, "Y" : 12, "Shift" : "none", "Group" : 0 },
+  { "X" : 14, "Y" : 13, "Shift" : "none", "Group" : 0 }
+],
+"Wires" : [
+    { "Value" : "01", "X" : 15, "Y" : 11, "Group" : 0 },
+    { "Value" : "01", "X" : 4, "Y" : 7, "Group" : 0 },
+    { "Value" : "02", "X" : 15, "Y" : 10, "Group" : 0 },
+    { "Value" : "02", "X" : 4, "Y" : 14, "Group" : 0 },
+    { "Value" : "03", "X" : 15, "Y" : 13, "Group" : 0 },
+    { "Value" : "03", "X" : 4, "Y" : 11, "Group" : 0 }
+],
+"Text" : [
+],
+"Nets" : [
+    { "Node" : "N000000", "Components" : [
+    { "Name" : "U1", "Pins" : ["11", "9"] }
+    ] },
+    { "Node" : "N000001", "Components" : [
+    { "Name" : "B1", "Pins" : ["1"] },
+    { "Name" : "U1", "Pins" : ["1"] },
+    { "Name" : "U2", "Pins" : ["1"] }
+    ] },
+    { "Node" : "N000002", "Components" : [
+    { "Name" : "U1", "Pins" : ["5"] },
+    { "Name" : "U2", "Pins" : ["2"] }
+    ] },
+    { "Node" : "N000003", "Components" : [
+    { "Name" : "B1", "Pins" : ["2"] },
+    { "Name" : "FET?", "Pins" : ["1"] },
+    { "Name" : "U1", "Pins" : ["2"] }
+    ] },
+    { "Node" : "N000004", "Components" : [
+    { "Name" : "FET?", "Pins" : ["3"] },
+    { "Name" : "U2", "Pins" : ["4"] }
+    ] },
+    { "Node" : "N000005", "Components" : [
+    { "Name" : "FET?", "Pins" : ["2"] },
+    { "Name" : "U1", "Pins" : ["15"] }
+    ] }
+]
+}
