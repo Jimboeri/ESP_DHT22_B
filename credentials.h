@@ -1,9 +1,0 @@
-#define mySSID "xxxxxxxx"
-#define mypassword "xxxxxxxx"
-#define apSSID "ESP"
-#define apPassword ""
-#define initMQTT_host "192.168.1.93"
-#define initMQTT_port 1883
-#define initMQTT_password ""
-#define initMQTT_user ""
-#define initMQTT_topic "house/sunroom"
